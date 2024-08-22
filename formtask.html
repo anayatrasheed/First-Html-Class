@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+	<style>
+		form {
+			width: 50%;
+           
+		}
+
+		legend {
+			display: block;
+			padding-left: 10px;
+			padding-right: 10px;
+			border: 3px solid rgb(0, 0, 0);
+			background-color: rgb(255, 255, 255);
+			color: rgb(0, 0, 0);
+			;
+		}
+
+		label {
+			display: inline-block;
+			float: left;
+			clear: left;
+			width: 90px;
+			margin: 5px;
+			text-align: left;
+		}
+
+		input[type="text"] {
+			width: 250px;
+			margin: 5px 0px;
+		}
+
+		.gfg {
+			font-size: 40px;
+			color: green;
+			font-weight: bold;
+		}
+	</style>
+</head>
+
+<body>
+
+	
+	<form action="/action_page.php" style="padding-left: 25% ;">
+		<fieldset style="border: 2px solid black; height: 600px;">
+			<!-- Legend tag using -->
+			<legend>Personal Detail</legend>
+            <br>
+			<label >Name:</label>
+			<input  type="text" >
+			<br><br>
+			<label>Password:</label>
+			<input type="password">
+			<br><br>
+            <label>Gender </label>   <input type="radio" name= "Gender" style="margin-left: 1%;" >Male
+            <input type="radio" name= "Gender" >Female <br><br>
+            <label>Hobies </label>   <input type="checkbox" style="margin-left: 1%;">Book Reading
+            <input type="checkbox" >Music
+            <input type="checkbox" >Travelling<br><br>
+			<label>Country:</label>  
+              <select style= "margin-left: 1%;padding-left: 15%;">
+                <option value=""></option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Russia">Russia</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
+                <option value="USA">USA</option>
+                <option value="UK">INDIA</option>
+              </select>
+              <br><br><br>
+			<label>Message:</label>  
+            <textarea id="w3review" name="w3review" rows="8" cols="50">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam dolor voluptate sapiente ex cum distinctio, necessitatibus iste nulla quas non dolorem esse voluptas officia, similique itaque ea laudantium quibusdam? Facilis illum, architecto id repellat alias quo ea inventore minima culpa, quod exercitationem aspernatur vitae molestias repudiandae odio. Sunt, quisquam temporibus est tenetur illo, ipsum aliquid sed quas ullam, sit quasi?</textarea>
+            <br><br>
+            <input style="margin-left: 100px; width: 80px; background-color: rgb(39, 23, 12);color: white;" type="submit" value="Submit">
+            <input style="width: 80px;  background-color: rgb(39, 23, 12);color: white;" type="reset" value="Reset">
+        
+           
+
+       
+		</fieldset>
+	</form>
+</body>
+
+</html>
